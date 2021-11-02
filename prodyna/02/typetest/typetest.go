@@ -2,6 +2,7 @@ package typetest
 
 import (
 	"fmt"
+	"strconv"
 	"unsafe"
 )
 
@@ -98,3 +99,10 @@ func GetWeekDay(d Day) string {
 }
 
 type Day int
+
+func TypeConvTest() {
+	var v = strconv.Itoa(10) // convert int to string
+	fmt.Printf("%T %v\n", v, v)
+	i,_ := strconv.Atoi(v) // parse string to in
+	fmt.Printf("%T %v\n", i, i)
+}

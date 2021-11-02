@@ -35,6 +35,7 @@ func main() {
 	fmt.Println(tp.Pi)
 	tp.IotaTest()
 	tp.TypeTest()
+	tp.TypeConvTest()
 }
 
 
